@@ -1,8 +1,8 @@
-package javahome;
+package javawork;
 
 import java.util.Scanner;
 
-public class javaHome1 {
+public class javaWork1_1 {
 	
 
 	public static void main(String[] args) {

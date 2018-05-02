@@ -1,8 +1,8 @@
-package javahome;
+package javawork;
 
 import java.util.Scanner;
 
-public class javaHome1_2 {
+public class javaWork1_2 {
 	public static void main(String[] arge) {
 		// ¾Å¾Å³Ë·¨±í
 		/*
