@@ -96,6 +96,7 @@ public class javaWork1_2 {
 		*/
 		
 		//求一百以内的所有偶数
+		/*
 		int num=1;
 		while(num<=100){
 			if(num%2==0) {
@@ -105,6 +106,6 @@ public class javaWork1_2 {
 				System.out.println("");
 			}
 			num++;
-		}
+		}*/
 	}
 }
