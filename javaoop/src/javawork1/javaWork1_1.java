@@ -6,37 +6,37 @@ public class javaWork1_1 {
 	
 
 	public static void main(String[] args) {
-		
-			System.out.print("ÇëÊäÈëÄê·İÊı£º");
+		/*
+			System.out.print("è¯·è¾“å…¥å¹´ä»½æ•°ï¼š");
 			Scanner scanner=new Scanner(System.in);
 			int years=scanner.nextInt();
 			if(years%400==0){
-				System.out.println(years+"ÄêÊÇÈòÄê¡£");
+				System.out.println(years+"æ˜¯é—°å¹´");
 			}else if(years%4==0&&years%100!=0){
-				System.out.println(years+"ÄêÊÇÈòÄê¡£");
+				System.out.println(years+"æ˜¯é—°å¹´");
 			}else{
-				System.out.println(years+"Äê²»ÊÇÈòÄê¡£");
+				System.out.println(years+"ä¸æ˜¯é—°å¹´");
 			}
-			/*
-			System.out.print("ÇëÊäÈë³É¼¨£º");
+			*/
+			System.out.print("è¯·è¾“å…¥åˆ†æ•°ï¼š");
 			Scanner scanner=new Scanner(System.in);
 			double s=scanner.nextDouble();
 			if(90<=s&&s<=100){
-				System.out.println("Ò»¸öÓÅĞãµÄ·ÖÊı£¬ÄãºÃ°ôÅ¶");
+				System.out.println("ä¸€ä¸ªä¼˜ç§€çš„åˆ†æ•°ï¼Œä½ å¥½æ£’å•Š");
 			}
 			else if(80<=s&&s<90){
-				System.out.println("Ò»¸öÁ¼ºÃµÄ·ÖÊı£¬¼ÓÓÍ°¡");
+				System.out.println("ä¸€ä¸ªè¯„ä¸ºè‰¯å¥½çš„åˆ†æ•°ï¼ŒåŠ æ²¹å•Š");
 			}
 			else if(70<=s&&s<80){
-				System.out.println("Ò»¸öÁ¼µÄ·ÖÊı£¬ÔÙ¼Ó°Ñ¾¢");
+				System.out.println("ä¸€ä¸ªè¯„ä¸ºè‰¯çš„åˆ†æ•°ï¼Œå†åŠ æŠŠåŠ²");
 		    }
 			else if(60<=s&&s<70){
-			System.out.println("Ò»¸ö¸Õ¸Õ¼°¸ñµÄ·ÖÊı£¬»¹ĞèÅ¬Á¦");
+			System.out.println("ä¸€ä¸ªåˆšåˆšåŠæ ¼çš„åˆ†æ•°ï¼Œè¿˜éœ€åŠªåŠ›");
 			}
 			else if(0<=s&&s<60){
-				System.out.println("ÕâÕæÊÇÒ»¸ö±­¾ß°¡");
+				System.out.println("è¿™çœŸæ˜¯ä¸€ä¸ªæ¯å…·å•Š");
 			}else{
-				System.out.println("ÂÒÊäÈëÎÒ´òÄãÆ¨Æ¨Å¶");
-			}*/
+				System.out.println("ä¹±è¾“å…¥æˆ‘æ‰“ä½ å±å±å“¦");
+			}
 		}
 	}

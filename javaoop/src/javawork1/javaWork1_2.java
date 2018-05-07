@@ -4,26 +4,46 @@ import java.util.Scanner;
 
 public class javaWork1_2 {
 	public static void main(String[] arge) {
-		// ¾Å¾Å³Ë·¨±í
+		// ä¹ä¹ä¹˜æ³•è¡¨
 		/*
-		  for(int i=1;i<10;i++){ 
-		  System.out.println(" "); 
-		  for(int j=1;j<=i;j++){
-		  System.out.print(i+"x"+j+"="+i*j); 
-		  System.out.print("   "); } 
-		  } 
-		  */ 
+		  int j;
+		  int i;
+		  for(i=1;i<10;i++){ 
+		  for(j=1;j<=i;j++){
+		  System.out.print(j+"x"+i+"="+i*j+"\t"); 
+		  }
+			  System.out.println("");
+		   */
+		/*
+		int i=1;
+		
+		while(i<10) {
+			int j=1;
+			while(j<=i) {
+				System.out.print(j+"x"+i+"="+i*j+"\t");
+				j++;
+			}
+			System.out.println();
+			i++;
+			
+		}
+		*/
+		  		 
 		  
-		 
+		/*for(int i=1;i<=4;i++){ 
+			  System.out.println(""); 
+			  for(int j=1;j<=i;j++){
+			  System.out.print("*"); 
+			  } */
 
-// ¿¿ÓÒÈı½ÇĞÎ´òÓ¡
+// é å³çš„ç›´è§’ä¸‰è§’å½¢
 /*
-		System.out.print("ÇëÊäÈëÈı½ÇĞÎĞĞÊı£º");
+		System.out.print("è¯·è¾“å…¥ä¸‰è§’å½¢çš„è¡Œæ•°ï¼š");
 		Scanner scanner = new Scanner(System.in);
 		int num = scanner.nextInt();
 		for (int i = 1; i <= num; i++) {
-			for (int j = num; j > 0; j--) {
-				if (j <= i) {
+			for (int j = num; j >0; j--) {
+				if (j <=i) {
 					System.out.print("*");
 				} else {
 					System.out.print(" ");
@@ -34,53 +54,75 @@ public class javaWork1_2 {
 		System.out.println(" ");
 */
 
-//µÈÑüÈı½ÇĞÎ´òÓ¡
-/*
-		System.out.print("ÇëÊäÈëÈı½ÇĞÎĞĞÊı£º");
+//ç­‰è…°ä¸‰è§’å½¢
+
+		System.out.print("è¯·è¾“å…¥ä¸‰è§’å½¢çš„è¡Œæ•°:");
 		Scanner scanner = new Scanner(System.in);
 		int num = scanner.nextInt();
-		for (int i = 1; i <= num; i++) {
+		for (int i=1 ; i <= num; i++) {
 			for (int j = num; j > 0; j--) {
-				if (j <= i) {
-					System.out.print("* ");
+				if (j <=i) {
+					System.out.print("*");
 				} else {
 					System.out.print(" ");
 				}
+				if (j <i) {
+					System.out.print("*");
+					}
 			}
 			System.out.println(" ");
 		}
-		System.out.println(" ");
-*/	
+		
+		
 
 
-// ÊıµÄ½×³ËËã·¨
+
+// æ•°çš„é˜¶ä¹˜
 /*
-  System.out.print("ÇëÊäÈëÒ»¸öÊı£º");
+  System.out.print("è¿™é‡Œæ˜¯è®¡ç®—é˜¶ä¹˜ï¼Œè¯·è¾“å…¥ä¸€ä¸ªæ•°ï¼š");
   Scanner scanner=new Scanner(System.in); 
   int s=scanner.nextInt(); 
-  int b=1;
-  for(int a=2;a<=s;a++){ 
+  int b=2;
+  for(int a=3;a<=s;a++){ 
       b=b*a; 
   }
-  System.out.print("¸ÃÊıµÄ½×³ËÎª£º"+b); 
+  System.out.println("è¿™ä¸ªæ•°çš„é˜¶ä¹˜ä¸ºï¼š"+b); 
+  */
+	
+//é˜¶ä¹˜é€’å½’è®¡ç®—(è‡ªå·±è°ƒç”¨è‡ªå·±)
+/*
+  System.out.print("è¿™é‡Œæ˜¯è®¡ç®—é˜¶ä¹˜ï¼Œè¯·è¾“å…¥ä¸€ä¸ªæ•°ï¼š");
+  Scanner sca=new Scanner(System.in); 
+  int s1=scanner.nextInt();
+  System.out.println(fac(s1));
+	}
+	
+	public static int fac(int s1) {
+		if(s1==1) {
+			return 1;
+		}else {
+			return s1*fac(s1-1);
+		}
 */
 		
-//ÊıµÄN´Î·½
+
+		
+//æ•°çš„Næ¬¡æ–¹
 		/*
-		System.out.print("ÇëÊäÈëµ×Êı£º");
+		System.out.print("è¯·è¾“å…¥ä¸€ä¸ªæ•°ï¼š");
 		Scanner scanner=new Scanner(System.in);
 		int num1=scanner.nextInt();
-	    System.out.print("ÇëÊäÈëÃİÊı:");
+	    System.out.print("è¯·è¾“å…¥æ¬¡æ–¹æ•°:");
 	    int num2=scanner.nextInt();
 		int a=num1;
 		for(int num3=num2;num3>1;num3--) {
 			num1=num1*a;
 		}
-		System.out.print(a+"µÄ"+num2+"´Î·½Îª£º"+num1);
+		System.out.print(a+"çš„"+num2+"æ¬¡æ–¹ä¸ºï¼š"+num1);
 		*/
   
 		
-		//´æÇ®ÂòÍæ¾ß
+		//å­˜é’±é—®é¢˜
 		/*
 		double a=2.5;
 		int day1=0;
@@ -89,22 +131,28 @@ public class javaWork1_2 {
 			money=money+a;
 			day1++;
 			if(day1%5==0) {
-				System.out.print("½ñÌìÄÃ³öÁË6Ôª£¬");
+				System.out.print("ä»Šå¤©å–å‡ºäº†å…­å—é’±ï¼Œ");
 				money=money-6;
-			}System.out.println("µÚ"+day1+"Ìì´æÏÂ"+money+"Ôª");
-		}System.out.println("ĞèÒª¾­¹ı"+day1+"Ìì²ÅÄÜ´æÉÏÒ»°ÙÔª¡£");	
-		*/
+			}System.out.println("ç¬¬"+day1+"å¤©å­˜äº†"+money+"å…ƒ");
+		}System.out.println("éœ€è¦"+day1+"å¤©æ‰èƒ½å­˜ä¸Šä¸€ç™¾å…ƒã€‚");	
+		*/ 
 		
-		//ÇóÒ»°ÙÒÔÄÚµÄËùÓĞÅ¼Êı
-		int num=1;
+		//æ‰“å°å¶æ•°
+		/*
+		int num=0;
+		int num1=0;
 		while(num<=100){
-			if(num%2==0) {
-				System.out.print(num+"  ");
+			if(num%2==0){
+				//System.out.print(num+"  ");
+				num1=num1+num;
 			}
-			if(num%10==0) {
-				System.out.println("");
-			}
+			
+			
+			//if(num%10==0) {
+			//	System.out.println("");
+			//}
 			num++;
-		}
+		};*/
 	}
-}
+	}
+
