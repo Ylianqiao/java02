@@ -14,7 +14,7 @@ public class javaWork2_1 {
 		char str2=str1.charAt(0);  //charAt()获取指定位置的字符内容；
 		int array[]=new int[0];
 		for(int i=0;i<str.length();i++) {  //遍历输入的字符串内容
-			char mychar=str.charAt(i);
+			char mychar=str.charAt(i);    //charAt()获取指定位置的字符内容；
 			if(str2==mychar) {
 				 array=Arrays.copyOf(array, array.length+1);
 			     array[array.length-1]=i;
