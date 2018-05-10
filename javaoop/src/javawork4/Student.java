@@ -14,6 +14,6 @@ public class Student {
 	}
     public void show() {
     	System.out.println(name+"的信息："+"\n"+"姓名:"+name+"\n"+"年龄:"+age+"\n"+
-    "选择的课程:"+course+"\n"+"兴趣:"+interest+"\n");
+    "选择的课程:"+course+"\n"+"兴趣:"+interest+"\n"+"\n");
     }
 }
