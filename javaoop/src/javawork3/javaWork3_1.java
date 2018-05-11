@@ -21,10 +21,9 @@ public class javaWork3_1 {
 	    		 a=array[j];
 	    		 array[j]=array[j-1];
 	    		 array[j-1]=a;
-	    	 }
-	     
+	    	 }  
 	}
-	     } 
+} 
 	     //array=bubbleSort(array);
 	     for(int a=0;a<array.length;a++) { 
 		System.out.print(array[a]+" ");
@@ -33,7 +32,7 @@ public class javaWork3_1 {
 	   
 	}
 
-	private static int[] bubbleSort(int[] array) {
+	/*private static int[] bubbleSort(int[] array) {
 		for(int x=0;x<array.length-1;x++) {
 			for(int y=0;y<array.length-x-1;y++) {
 				if(array[y]>array[y+1]) {
@@ -44,5 +43,5 @@ public class javaWork3_1 {
 			}
 		}
 		return array;
-	}
+	}*/
 }

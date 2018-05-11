@@ -1,10 +1,10 @@
 package javawork4;
 
 public class Teacher {
-	String name;
-	String professional;//授课
-	String course;//课程
-	int teachAge;//教龄
+	private String name;
+	private String professional;//授课
+	private String course;//课程
+	private int teachAge;//教龄
 	
 	public Teacher(String a,String b,String c,int d) {
 		name=a;
