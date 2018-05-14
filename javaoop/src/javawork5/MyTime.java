@@ -4,6 +4,7 @@ public class MyTime {
 	private int hour;
 	private int minute;
 	private int second;
+	private int mintue;
 
 	public MyTime(int hour,int minute,int second) {
 		this.hour=hour;
@@ -27,26 +28,56 @@ public class MyTime {
 	
 	public void addSecond(int sec) {
 		second=second+sec;
-		System.out.println("现在时间是:"+hour+":"+minute+":"+second);
+		addMinute(second/60);
+		second=second%60;
 	}
 	public void addMinute(int min) {
 		minute=minute+min;
-		System.out.println("现在时间是:"+hour+":"+minute+":"+second);
+		addhour(minute/60);
+		minute=minute%60;
 	}
 	public void addhour(int hou) {
 		hour=hour+hou;
-		System.out.println("现在时间是:"+hour+":"+minute+":"+second);
+		if(hour>=24) {
+			hour-=24;
+			System.out.println("第二天了");
+		}
+		
 	}
 	public void subSecond(int sec) {
 		second=second-sec;
-		System.out.println("现在时间是:"+hour+":"+minute+":"+second);
+		if(second<0) {
+			second=60+second;
+			minute-=1;
+			if(minute<0) {
+				minute=60+minute;
+				hour-=1;
+				if(hour<0) {
+					hour=24+hour;
+					System.out.println("前一天了");
+				}
+			}
+		}
+		
 	}
 	public void subMinute(int min) {
 		minute=minute-min;
+		if(minute<0) {
+			minute=60+minute;
+			hour-=1;
+			if(hour<0) {
+				hour=24+hour;
+				System.out.println("前一天了");
+			}
+		}
 		System.out.println("现在时间是:"+hour+":"+minute+":"+second);
 	}
 	public void subhour(int hou) {
-		hour=hour-hou;
+		this.hour=hour-hou;
+		if(hour<0) {
+			hour=24+hour;
+			System.out.println("前一天了");
+		}
 		System.out.println("现在时间是:"+hour+":"+minute+":"+second);
 	}
 }
