@@ -1,6 +1,7 @@
 package javawork5;
 
 public class MyTime {
+	private static final String Date = null;
 	private int hour;
 	private int minute;
 	private int second;
@@ -80,4 +81,5 @@ public class MyTime {
 		}
 		System.out.println("现在时间是:"+hour+":"+minute+":"+second);
 	}
+	
 }

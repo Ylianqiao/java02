@@ -6,18 +6,18 @@ public class javaWork1_1 {
 	
 
 	public static void main(String[] args) {
-		/*
+		
 			System.out.print("请输入年份数：");
 			Scanner scanner=new Scanner(System.in);
 			int years=scanner.nextInt();
-			if(years%400==0){
+			if(years%400==0||(years%4==0&&years%100!=0)){
 				System.out.println(years+"是闰年");
-			}else if(years%4==0&&years%100!=0){
-				System.out.println(years+"是闰年");
-			}else{
+			}
+			else{
 				System.out.println(years+"不是闰年");
 			}
-			*/
+			
+		/*
 			System.out.print("请输入分数：");
 			Scanner scanner=new Scanner(System.in);
 			double s=scanner.nextDouble();
@@ -37,6 +37,6 @@ public class javaWork1_1 {
 				System.out.println("这真是一个杯具啊");
 			}else{
 				System.out.println("乱输入我打你屁屁哦");
-			}
+			}*/
 		}
 	}

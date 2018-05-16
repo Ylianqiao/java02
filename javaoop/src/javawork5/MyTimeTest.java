@@ -14,6 +14,9 @@ public class MyTimeTest {
 		myt.subSecond(13);
 		myt.subMinute(15);
 		myt.subhour(4);
+		
+		
+	
 	}
 
 }

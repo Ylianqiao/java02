@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class javaWork2_1 {
 	public static void main(String[] args) {
-		//String str="ͳ��һ���ַ����ַ����е�����λ��";
 		Scanner sca=new Scanner(System.in);
 		System.out.print("请输入你想查找的字符串:");
 		String str=sca.nextLine();
