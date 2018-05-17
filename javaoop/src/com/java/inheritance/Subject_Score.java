@@ -43,6 +43,4 @@ public class Subject_Score {
     public String getRemark(String review) {
     	return review;
     }
-
-	
 }
