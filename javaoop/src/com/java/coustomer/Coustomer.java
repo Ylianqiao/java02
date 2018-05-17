@@ -4,6 +4,11 @@ public class Coustomer {
 	private String name;
 	private String gender;
 	
+	public Coustomer(String name, String gender) {
+		this.name = name;
+		this.gender = gender;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -29,15 +34,13 @@ class VIPCoustomer extends Coustomer{
 	
 	private String level;
 	
-	public String getLevel() {
-		return level;
+	public VIPCoustomer(String name,String gender,String level) {
+		super(name,gender);
+		this.level=level;
+		
 	}
 
-	public void setLevel(String level) {
-		this.level = level;
-	}
-
-	public void touSu(String name,String gender) {
-		System.out.println("投诉信息:"+"\n"+level+name+gender+"正在投诉中...");
+	public void touSu() {
+		System.out.println("投诉信息:"+"\n"+level+getName()+getGender()+"正在投诉中...");
 	}
 }
